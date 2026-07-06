@@ -1,0 +1,284 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:#06666d;
+    color:white;
+}
+
+.top{
+    width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    font-size:38px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.search{
+    display:flex;
+}
+
+.search input{
+    width:250px;
+    padding:10px;
+    border:none;
+    outline:none;
+    border-radius:5px 0 0 5px;
+}
+
+.search button{
+    background:#ffcc00;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+    border-radius:0 5px 5px 0;
+    font-weight:bold;
+}
+
+/* ===== MENU ===== */
+
+nav{
+    background:#06666d;
+}
+
+nav ul{
+    width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li{
+    position:relative;
+}
+
+nav ul li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px 28px;
+    font-size:17px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li:hover{
+    background:#ffcc00;
+}
+
+nav ul li:hover a{
+    color:black;
+}
+
+/* ===== THỜI GIAN ===== */
+
+#time{
+    width:1200px;
+    margin:10px auto;
+    color:#06666d;
+    font-weight:bold;
+    font-size:16px;
+}
+
+/* ===== BANNER ===== */
+
+.banner{
+    width:1200px;
+    margin:15px auto;
+}
+
+.banner img{
+    width:100%;
+    border-radius:8px;
+}
+
+/* ===== CONTAINER ===== */
+
+.container{
+    width:1200px;
+    margin:auto;
+}
+
+/* ===== TIN CHÍNH ===== */
+
+.row{
+    display:flex;
+    gap:20px;
+}
+
+.left{
+    width:70%;
+}
+
+.right{
+    width:30%;
+}
+
+.card{
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+    margin-bottom:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:100%;
+}
+
+.card h2{
+    padding:15px;
+    color:#06666d;
+}
+
+.card p{
+    padding:0 15px 20px;
+    line-height:1.6;
+    text-align:justify;
+}
+
+/* ===== TIN NHỎ ===== */
+
+.news{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.item{
+    background:white;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 0 8px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.item:hover{
+    transform:translateY(-5px);
+}
+
+.item img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+}
+
+.item h3{
+    padding:12px;
+    font-size:18px;
+}
+
+.item a{
+    text-decoration:none;
+    color:#222;
+}
+
+.item a:hover{
+    color:#06666d;
+}
+
+/* ===== SIDEBAR ===== */
+
+.right .card h2{
+    background:#06666d;
+    color:white;
+}
+
+.right .card p{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+/* ===== FORM ===== */
+
+form{
+    background:white;
+    padding:25px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+form label{
+    font-weight:bold;
+}
+
+form input{
+    width:100%;
+    padding:12px;
+    margin:10px 0 20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form button{
+    background:#06666d;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+    border-radius:5px;
+    font-size:16px;
+}
+
+form button:hover{
+    background:#06666d;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    margin-top:30px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:1200px){
+
+.top,
+nav ul,
+.container,
+.banner,
+#time{
+    width:95%;
+}
+
+.row{
+    flex-direction:column;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.news{
+    grid-template-columns:1fr;
+}
+
+.search input{
+    width:170px;
+}
+
+}
